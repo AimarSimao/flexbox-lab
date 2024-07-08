@@ -7,15 +7,47 @@ body {
   background-color: gray;
   font-family: system-ui, sans-serif;
   margin: 0;
+  
+
 }
 
 nav {
   background-color: white;
-  padding: 8px 16px;
+  padding: 20px;
+  display: flex;
+  margin: 0 auto;
+  max-width: 2;
+  justify-content: space-between;
+
 }
+
+#nav #destinations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+#nav #actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
 
 p {
   margin: 0;
+  background-color: white;
+  font-size: 15px;
+  padding: 10px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: flex-start;
+  display: flex;
+
+  
 }
 
 section {
@@ -23,7 +55,19 @@ section {
   background-color: black;
   color: white;
   padding: 24px 72px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
+
+section #trending {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
 
 h1,
 h2 {
@@ -52,6 +96,16 @@ input {
 main {
   background-color: white;
   padding: 32px 72px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  
+}
+.card {
+  justify-content: space-between;
 }
 
 nav button {
@@ -72,6 +126,9 @@ nav button {
 
 .card-footer {
   font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .card-footer * {
@@ -81,6 +138,8 @@ nav button {
 #subnav {
   padding: 32px 72px 0;
   background-color: white;
+  display: flex;
+  justify-content: space-between;
 }
 
 #subnav button {
